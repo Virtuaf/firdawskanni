@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset= "UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<script>
+    //Get the button:
+    let mybutton =
+    document.getElementById("buton");
+    // When user scrolls down 50px from the top of the document, show the button
+    window.onscroll= function()
+    {scrollFunction()};
+    function scrollFunction() {
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    buton.style.display = "block";
+  } else {
+    buton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+
+</script>
+<style>
+     body{
+        background-color:rgb(244, 252, 255);
+       background-size:contain;
+   }
+    nav{
+              font-size: x-large;
+
+              text-align: left;
+          }
+    #capture{
+              font-size: large;
+          }
+    #schools {
+        border: 5px solid;
+        width: 700px;
+        height:350px;
+        border-collapse: collapse;
+        padding: 30px;
+        text-align: center;
+    } 
+    th {
+        font-weight: 200px;
+        background-color: white;
+        border: 1px solid;
+        width: 60px;
+        height:30px;
+        border-collapse: collapse;
+        
+    }
+    td {
+        border: 1px solid;
+        width: 20px;
+        height:20px;
+        border-collapse: collapse;
+    }
+    tr:nth-child(even){
+        background-color: #7a8581;
+        color: rgb(0, 0, 0);
+    }
+    tr:nth-child(odd){
+        background-color: #9ddfc7;
+        color: black;
+    }
+    tr:hover {
+        background-color: cadetblue;
+    }
+    #buton{
+        display:none; /*Hidden by default*/
+        position:fixed;/*Fixed/sticky  position*/
+        bottom:20px; /*Place the button at the bottom of the page*/
+        left:50px; /*Place the button 50px from the left*/
+        z-index: 99; /* Make sure it doesn't overlap*/
+        border:3px solid; 
+        outline:none; /*Remove outline*/
+        background-color: blue; /*Set a backgound color*/
+        color:white; /*Text color*/
+        cursor:pointer;
+        padding:15px; /*Some padding*/
+        border-radius: 10px;/*Rounded corners*/
+        font-size: 20px;/*Increase font size*/
+    }
+    #buton:hover{
+        background-color: cadetblue;
+    }
+    span{
+        font-size: medium;
+    }
+    footer{ background-color:goldenrod;
+        background-size: contain;
+    }
+</style>
+<title>About</title>
+</head>
+<body>
+<header href="the-top">
+    <nav><a href="Home Page.html">&nbsp;Home Page&nbsp;</a>
+    <a href="About.html">&nbsp;About&nbsp;</a>
+    <a href="Apply.html">&nbsp;Apply&nbsp;</a>
+    <a href="Author.html">&nbsp;Author&nbsp;</a></nav>
+</header>
+    <h1>About Altschool</h1>
+    <p>
+
+    </p>
+    <caption id="capture">Altschool is divided into three different schools:</caption><br><br><br><br>
+    <table id="schools">
+        <thead>
+            <tr>
+                <th>School of Engineering(SOE)</th>
+                <th>School of Product(SOP)</th>
+                <th>School of Data(SOD)</th>
+                <th>School of Creative Economy</th>
+                <th>School of Business</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Frontend Engineering</td>
+                <td>Product Design</td>
+                <td>Data Analysis</td> 
+                <td>Navigating the Music Business in Africa: Afrobeats case study</td>
+                <td>High-Impact Selling: From Prospecting to Closing</td>
+            </tr>
+            <tr>
+                <td>Backend Engineering</td>
+                <td>Data Science</td>
+                <td>Marketing</td>
+                <td>Content Mastery for African Creators</td>
+                <td>Digital Marketing</td>
+            </tr>
+            <tr>
+                <td>Cloud Engineering</td>
+                <td>Data Engineering</td>
+                <td>Management</td>
+                <td>Nil</td>
+                <td>Nil</td>
+            </tr>
+            <tr>
+                <td>Cybersecurity</td>
+                <td>Nil</td>
+                <td>Nil</td>
+                <td>Nil</td>
+                <td>Nil</td>
+            </tr>
+        </tbody>
+    </table><br>
+    <br>
+    <footer>
+        <button onclick="topFunction('0, 0')" id="buton" title="Back to the top">Back to the top</button>
+        <span>&nbsp;Goodbye&nbsp;</span>
+        <span>&nbsp;firdawskanni07@gmail.com&nbsp;</span>
+        <span>&nbsp;09074181071&nbsp;</span>
+    </footer>
+</body>
